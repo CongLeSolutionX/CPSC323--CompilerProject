@@ -1,0 +1,29 @@
+Output:
+
+SYMBOL TABLE
+Identifier     Memory Location     Type           
+low                 5000           int       
+high                5001           int       
+step                5002           int       
+
+INSTRUCTION TABLE
+Address   Operator  Operand
+1           STDIN     
+2           POPM      5000
+3           STDIN     
+4           POPM      5001
+5           STDIN     
+6           POPM      5002
+7           LABEL     
+8           PUSHM     5000
+9           PUSHM     5001
+10          LES       
+11          JUMPZ     19
+12          PUSHM     5000
+13          STDOUT    
+14          PUSHM     5000
+15          PUSHM     5002
+16          ADD       
+17          POPM      5000
+18          JUMP      7
+19          LABEL     
